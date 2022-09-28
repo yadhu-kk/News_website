@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <h1>Top Heading</h1>
+  <div class="row">
+    <div *ngFor="let item of techDisplay" class="col-lg-3 mt-3 mb-3">
+      <div class="box">
+        <img src="{{ item.urlToImage }}" width="100%" />
+        <h5 class="mt-2 mb-2">{{ item.title }}</h5>
+
+        <a href="{{ item.url }}" class="btn btn-dark btn-sm mt-2">ReadMore</a>
+      </div>
+    </div>
+  </div>
+</div>
